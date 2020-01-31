@@ -1,0 +1,44 @@
+{
+  "name": "04-vue-ssr-real",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-client": "webpack --mode development --config ./config/webpack.client.js",
+    "build-server": "webpack --mode development --config ./config/webpack.server.js",
+    "nodemon": "nodemon server.js",
+    "dev-client": "webpack-dev-server --mode development --config ./config/webpack.client.js",
+    "dev-server": "webpack -w --config ./config/webpack.server.js",
+    "dev": "run-p dev-client dev-server nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "vue": "^2.6.11",
+    "vue-meta": "^2.3.2",
+    "vue-router": "^3.1.5",
+    "vue-server-renderer": "^2.6.11",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "vue-loader": "^15.8.3",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
