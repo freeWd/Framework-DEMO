@@ -20,7 +20,6 @@ app.get("/", (req, resp) => {
   let context = {
     url: req.url
   };
-
   render.renderToString(context, (err, html) => {
     console.log("1----->", html, err);
     resp.send(html);
