@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div class="header">
+      <strong>Hello world</strong>
+    </div>
     <nuxt />
   </div>
 </template>
@@ -51,5 +54,13 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.header {
+  height: 50px;
+  line-height: 50px;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  text-align: center;
 }
 </style>

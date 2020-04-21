@@ -1,8 +1,5 @@
 # MIDDLEWARE
 
-**This directory is not required, you can delete it if you don't want to use it.**
-
-This directory contains your application middleware.
-Middleware let you define custom functions that can be run before rendering either a page or a group of pages.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/routing#middleware).
+中间件使您可以定义可在呈现一个页面或一组页面之前运行的自定义功能
+每一个中间件应放置在 middleware/ 目录。文件名的名称将成为中间件名称(middleware/auth.js 将成为 auth 中间件)
+[文档](https://nuxtjs.org/guide/routing#middleware)

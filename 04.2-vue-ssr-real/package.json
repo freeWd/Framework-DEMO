@@ -10,7 +10,7 @@
     "nodemon": "nodemon server.js",
     "dev-client": "webpack-dev-server --mode development --config ./config/webpack.client.js",
     "dev-server": "webpack -w --config ./config/webpack.server.js",
-    "dev": "run-p dev-client dev-server nodemon"
+    "start-dev": "run-p dev-client dev-server nodemon"
   },
   "keywords": [],
   "author": "",
